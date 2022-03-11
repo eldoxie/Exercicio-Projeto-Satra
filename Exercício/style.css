@@ -1,0 +1,52 @@
+body {
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    color: rgb(92, 92, 92);
+    line-height: 1.7;
+}
+
+a {
+    transition: color .2s linear;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    padding: 124px 52px 72px;
+    box-sizing: border-box;
+    background-image: url(../imagens/overlay.png), url(../imagens/bg.jpg);
+    background-position: left top;
+    background-size: auto;
+    text-align: right;
+}
+
+.main-header-title {
+    font-size: 22px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255, .5);
+    font-weight: normal;
+}
+
+.main-header-title strong {
+    color: white;
+    font-weight: normal;
+}
+
+.main-header-link {
+    color: inherit;
+}
+
+.main-header-link:hover {
+    color: #49bf9d;
+}
+
+.main-content {
+    width: 65%;
+    margin-left: 35%;
+    padding: 124px 52px 72px;
+    box-sizing: border-box;
+}
