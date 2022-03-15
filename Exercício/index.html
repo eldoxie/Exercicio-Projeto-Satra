@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Satra</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+
+
+    
 </head>
 <body>
     <header class="main-header">
@@ -109,6 +114,13 @@
             <h3>Text</h3>
                 <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <u>underlined</u> and this is <code>code: for (;;) { ... }</code>. Finally, this is <a href="#">a link</a>.</p>
         
+            <h1>Título h1</h1>
+            <h2>Título h2</h2>
+            <h3>Título h3</h3>
+            <h4>Título h4</h4>
+            <h5>Título h5</h5>
+            <h6>Título h6</h6>
+
             <h3>Blockquote</h3>                
                 <blockquote cite="http://developer.mozilla.org">
                 <p>Esta é uma citação tirada da
@@ -120,36 +132,49 @@
                 cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0
                 was released in 2004 and became a big success.</q>
                 </p>
+
             <h3>Preformatado</h3>
                 <pre>
+                    <code>
+    &lt;script&gt;
+        alert('oi');
+    &lt;/script&gt;
+                    </code>
+                </pre>
 
-    y {
-        color:red;
-
-                    </pre>
             <h3>Listas</h3>
-                <h4>Não ordenada</h4>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
-                <h4>Ordenada</h4>
-                <ol>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ol>
-                <h4>Alternate</h4>
-                <ul class="ul-alternate">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
-                <h4>Icones</h4>
-                <ul>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                </ul>
+                <div class="row">
+                    <div class="col-2">
+                        <h4>Não ordenada</h4>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        <h4>Ordenada</h4>
+                            <ol>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ol>
+                    </div>
+
+                    <div class="col-2">
+                        <h4>Alternate</h4>
+                            <ul class="ul-alternate">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+    
+                        <h4>Icones</h4>
+                            <ul class="ul-icons">
+                                <li><i class="fab fa-twitter"></i></li>
+                                <li><i class="fab fa-facebook-square"></i></li>
+                            </ul>
+                    </div>
+                </div>
+
             <h3>Actions</h3>
                 <p>
                     <a href="#" class="button-default">Default</a>
