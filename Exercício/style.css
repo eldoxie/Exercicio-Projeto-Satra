@@ -63,6 +63,10 @@ blockquote {
     padding: .5em 0 .5em 1.5em;
 }
 
+blockquote p {
+    margin-bottom: 0;
+}
+
 code {
     background: #f7f7f7;
     border-radius: .35em;
@@ -87,6 +91,14 @@ li {
     padding-left: .5em;
 }
 
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: block;
+}
+
 .ul-alternate {
     list-style-type: none;
     padding-left: 0;
@@ -94,6 +106,7 @@ li {
 
 .ul-alternate li {
     border-bottom: 2px solid #d8d8d8;
+    padding-left: 0;
 }
 
 .ul-alternate li:last-child {
@@ -140,7 +153,7 @@ textarea {
 
 .button-default {
     background-color: #49bf9d;
-    border: 2px solid #49bf9d;
+    border: 3px solid #49bf9d;
     color: white;
     padding: .75em 1.5em;
     border-radius: 5px;
@@ -227,7 +240,7 @@ textarea {
     box-sizing: border-box;
     background-image: url(../Exercício/Imagens/overlay.png), url(../Exercício/Imagens/bg.jpg);
     background-position: left top;
-    background-size: auto;
+    background-size: auto, cover;
     text-align: right;
 }
 
@@ -258,13 +271,13 @@ textarea {
     box-sizing: border-box;
 }
 
-.imagem-link img {
-    border-radius: 10px;
+.main-header-link img{
+    border-radius: 50%;
     overflow: hidden;
 }
 
-.main-header-link img{
-    border-radius: 50%;
+.recent-works-card img{
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -276,6 +289,43 @@ textarea {
     margin-bottom: 2%;
     display: inline-block;
     border-radius: 5px;    
+}
+
+.main-footer{
+    position: fixed;
+    bottom: 0;
+    width: 35%;
+    left: 0;
+    padding: 0 54px 72px 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+.main-footer a{
+    color: rgba(255, 255, 255, 0.4);    
+    text-decoration: none;
+}
+.main-footer a:hover{
+    color: #49bf9d;   
+}
+.main-footer .ul-icons a{
+  font-size: .75em;   
+    border-bottom: none;
+}
+.copyright{
+    list-style: none;
+}
+.copyright li{
+    display: inline-block;
+    border-left: solid 1px rgba(255, 255, 255, 0.25);
+    padding: 0 0.75em;
+    line-height: 1;
+    font-size: .8em;
+}
+.copyright li:first-child {
+    border-left: 0;
+}
+.copyright li:last-child {
+    padding-right: 0;
 }
 
 /* GRID */
